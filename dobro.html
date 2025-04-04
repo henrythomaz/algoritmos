@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobro</title>
+    <h1 id="num"></h1>
+</head>
+<body>
+    <script>
+        const num1 = window.prompt("Digite um número:");
+        const dobro = Number(num1) * 2
+        const txt = document.getElementById("num")
+
+        document.body.style.background = "#7d7574";
+        txt.style.textAlign = "center"
+        txt.style.color = "white"
+        txt.innerHTML = `O dobro de ${num1} é ${dobro}`
+    </script>
+</body>
+</html>

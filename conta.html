@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta</title>
+</head>
+<body>
+    <main>
+        <h1>Restaurante</h1>
+        <div id="res">
+            Conta
+        </div>
+    </main>
+    <script>
+        const conta = window.prompt("Quanto foi a conta?");
+        const taxaGarcon = (Number(conta) * 10) / 100;
+        const total = Number(conta) + taxaGarcon;
+        const res = document.getElementById("res");
+        document.body.style.background = "#d3fff6";
+        res.style.textAlign = "center"
+        res.style.color = "#ff9e59"
+
+        res.innerHTML = `A taxa do garçon é ${taxaGarcon}`
+        res.innerHTML += `<br> Você terá que pagar no total: ${total}`
+
+    </script>
+</body>
+</html>

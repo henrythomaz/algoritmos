@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem</title>
+</head>
+<body>
+        <label id="label">
+            <p id="p">Dia <input type="number" name="dias" id="days"></p>
+            <p id="p">Hora <input type="number" name="horas" id="hours"></p>
+            <p id="p"><input type="button" value="calcular" id="btn"></p>
+        </label>
+
+        <script>
+            const days = document.getElementById("days")
+            const hours = document.getElementById("hours")
+            const btn = document.getElementById("btn")
+            const label = document.getElementById("label")
+            const p = document.getElementById("p")
+
+            label.style.display = "flex"
+            label.style.alignItems = "center"
+            p.style.textAlign = "center"
+            btn.addEventListener('click', () => calcular())
+            document.body.style.background = "#d3fff6";
+
+            function calcular() {
+                const dayHours = Number(days.value) * 24;
+                const total = dayHours + Number(hours.value)
+                window.alert(`A viagem tem ${total}horas`)
+            }
+        </script>
+</body>
+</html>
