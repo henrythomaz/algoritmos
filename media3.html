@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de três números</title>
+</head>
+<body>
+    <div id="res">
+        Aqui aparece o resultado...
+    </div>
+
+    <script>
+        const res = document.getElementById('res');
+
+        let numeros = window.prompt('Escreva números separados por espaços:');
+        let arrayN = numeros.split(" ").map(Number);
+
+        let soma = 0;
+        for (let i = 0; i < arrayN.length; i++) {
+            soma += arrayN[i];
+        }
+        let media = soma/arrayN.length
+
+        document.body.style.textAlign = "center";
+        document.body.style.background = "#20dbc3";
+        res.innerText = `Média: ${media}`;
+    </script>
+</body>
+</html>
