@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de combustível</title>
+</head>
+<body>
+    <div id="res">
+        Aqui aparece o resultado...
+    </div>
+
+    <script>
+        const res = document.getElementById('res');
+
+        let km = window.prompt('Quantos km vc rodou?');
+        let combustivel = window.prompt('Quanto combustível você consumiu?');
+        let media = km/combustivel
+
+        document.body.style.textAlign = "center";
+        document.body.style.background = "#64a88d";
+        res.innerText = `Consumo médio: ${media}`;
+    </script>
+</body>
+</html>
