@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <div id="res">
+        Aqui aparece o resultado...
+    </div>
+
+    <script>
+        const res = document.getElementById('res');
+
+        let real = window.prompt('Quantos reais você quer converter?');
+        let dol = window.prompt('Quanto está o dólar?');
+
+        total = real * dol
+
+        document.body.style.textAlign = "center"
+        document.body.style.background = "#ffbb9e"
+        res.innerText = `O valor convertido em dólares é ${total}`
+    </script>
+</body>
+</html>
