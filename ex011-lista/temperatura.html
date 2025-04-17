@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de temperatura</title>
+</head>
+<body>
+    <div id="res">
+        Aqui aparece o resultado...
+    </div>
+
+    <script>
+        const res = document.getElementById('res');
+
+        let temp = window.prompt('Qual é a temperatura atual em Celsius?');
+        let Fah = (temp * 1.8) + 32;
+
+        document.body.style.textAlign = "center";
+        document.body.style.background = "#64a88d";
+        if(temp <= 20) {
+            res.innerText = `Bem...${temp}!!! esta bem frio hoje né!`;
+            res.innerText = `Bom mesmo assim convertendo em farenheit da: ${fah}`;
+        }else if(temp >= 40) {
+            res.innerText = `${temp}!!! esta bem quente hoje né!`;
+            res.innerText = `Bom mesmo assim convertendo em farenheit da: ${fah}`;
+        }
+        res.innerText = `UMM, ${temp}!!! que dia bom hoje né!`;
+        res.innerText = `E convertendo em farenheit da: ${fah}`;
+    </script>
+</body>
+</html>
