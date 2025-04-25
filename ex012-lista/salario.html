@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do salário</title>
+</head>
+<body>
+    <div id="res">
+        Aqui aparece o resultado...
+    </div>
+
+    <script>
+        const res = document.getElementById('res');
+        const precoHora = window.prompt('Qual é o valor da sua hora?');
+        const horasTrabalhadas = window.prompt('Quantas horas você trabalhou?');
+
+        let salarioBruto = precoHora * horasTrabalhadas
+
+        document.body.style.textAlign = "center";
+        document.body.style.background = "#ffa0b3";
+        res.innerText = `Salário bruto: ${salarioBruto}`;
+    </script>
+</body>
+</html>
