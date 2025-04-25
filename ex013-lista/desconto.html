@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor com desconto</title>
+</head>
+<body>
+    <div id="res">
+        Aqui aparece o resultado...
+    </div>
+
+    <script>
+        const res = document.getElementById('res');
+
+        const precoProduto = window.prompt('Quanto custou o produto?');
+        const desconto = window.prompt('Qual o valor do desconto?');
+
+        let total = precoProduto - ((precoProduto * desconto) / 100);
+
+        document.body.style.textAlign = "center";
+        document.body.style.background = "#ffa0b3";
+        res.innerText = `Produto com desconto: ${total}`;
+    </script>
+</body>
+</html>
