@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de tempo</title>
+</head>
+<body>
+    <div id="res">
+        Aqui aparece o resultado...
+    </div>
+
+    <script>
+        const res = document.getElementById('res');
+
+        const tempM = window.prompt('Qual foi o tempo em minutos?');
+
+        let hora = Math.floor(tempM / 60); // Corrigido para usar Math.floor()
+        let restM = tempM % 60;
+
+        document.body.style.textAlign = "center";
+        document.body.style.background = "#ffa0b3";
+        res.innerText = `${hora} horas e ${restM} minutos`; // Corrigido o formato da string
+    </script>
+</body>
+</html>
