@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Matemáticas</title>
+</head>
+<body>
+    <div id="res">
+        Aqui aparece o resultado...
+    </div>
+
+    <script>
+        const res = document.getElementById('res');
+
+        const operacoes = window.prompt('Digite \n 1-soma \n 2-subtração \n 3-produto\n 4-divisão inteira');
+        const num1 = window.prompt('Digite um número:');
+        const num2 = window.prompt('Digite outro número:');
+
+        let msg;
+        switch(Number(operacoes)) {
+            case 1:
+            let soma = Number(num1) + Number(num2)
+            msg = `A soma entre ${num1} e ${num2} é  ${soma}`;
+
+            break;
+            case 2:
+            let sub = Number(num1) - Number(num2)
+            msg = `A subtração entre ${num1} e ${num2} é  ${sub}`;
+            break;
+
+            case 3:
+            let multiplicacao = Number(num1) * Number(num2)
+            msg = `A multiplicacao entre ${num1} e ${num2} é  ${multiplicacao}`;
+            break;
+
+            case 4:
+            let div = Number(num1) / Number(num2)
+            msg = `A divisão entre ${num1} e ${num2} é  ${div}`;
+            break;
+
+            case 5:
+            let divInt = Number(num1) % Number(num2)
+            msg = `A divisão inteira entre ${num1} e ${num2} é  ${divInt}`;
+            break;
+
+            default:
+            window.alert('Valores inválidos digite de um a quatro pra as respectivas operações')
+            break;
+        }
+
+        document.body.style.textAlign = "center";
+        document.body.style.background = "#fca800";
+        res.innerText = msg;
+    </script>
+</body>
+</html>
