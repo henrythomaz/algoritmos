@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa retângular</title>
+</head>
+<body>
+    <div id="res">
+        Aqui aparece o resultado...
+    </div>
+
+    <script>
+        const res = document.getElementById('res');
+
+        let dimensoes = window.prompt('Escreva o comprimento, largura, altura (respectivamente):');
+        let arrayD = dimensoes.split(" ").map(Number);
+
+        let volume = 1;
+        for (let i = 0; i < arrayD.length; i++) {
+            volume *= arrayD[i];
+        }
+
+        document.body.style.textAlign = "center";
+        document.body.style.background = "#c1e8dd";
+        res.innerText = `Volume: ${volume}`;
+    </script>
+</body>
+</html>
