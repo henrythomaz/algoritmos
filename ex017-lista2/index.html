@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você passou?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="banner">
+            <header>
+                <h1>Você Passou?</h1>
+            </header>
+            <label for="nota" id="nota">
+                Notas: <input type="text" id="notas" name="Notas" placeholder="Escreva números separados por espaços:">
+                <input type="text" id="minPass" name="minPass" placeholder="Digite o mínimo pra passar:">
+
+                <input type="button" value="=>" onclick="verificarNota()" id="btn">
+            </label>
+            <div id="res">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Henry Thomaz</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
